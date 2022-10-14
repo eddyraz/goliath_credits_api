@@ -1,0 +1,9 @@
+(undo-tree-save-format-version . 1)
+"aa7415be3fdd017067e412922af440fe3b7ead55"
+[nil nil nil nil (25417 27437 31210 244000) 0 nil]
+([nil nil ((1754 . 1756) (t 25417 26606 465723 321000)) nil (25417 27437 31207 529000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 4837 . 4838) (nil fontified nil 1756 . 4838) (1756 . 4838)) nil (25417 27437 31204 553000) 0 nil])
+([nil nil ((#("c" 0 1 (fontified t face elixir-atom-face)) . -1764) (undo-tree-id0 . -1) (#("a" 0 1 (fontified t face elixir-atom-face)) . -1765) (undo-tree-id1 . -1) (#("b" 0 1 (fontified t face elixir-atom-face)) . -1766) (undo-tree-id2 . -1) (#("b" 0 1 (fontified t face elixir-atom-face)) . -1767) (undo-tree-id3 . -1) (#("o" 0 1 (fontified t face elixir-atom-face)) . -1768) (undo-tree-id4 . -1) (#("t" 0 1 (fontified t face elixir-atom-face)) . -1769) (undo-tree-id5 . -1) 1770) nil (25417 27437 31198 71000) 0 nil])
+([nil nil ((1764 . 1779)) nil (25417 27437 31166 211000) 0 nil])
+([nil current ((4847 . 4848) 1779) nil (25417 27437 31158 616000) 0 nil])
+nil

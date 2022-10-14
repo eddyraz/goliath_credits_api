@@ -1,0 +1,43 @@
+defmodule GoliathCreditsWeb.CreditsController do
+  use GoliathCreditsWeb, :controller
+
+  alias GoliathCredits.API
+  alias GoliathCredits.API.Credits
+
+  action_fallback GoliathCreditsWeb.FallbackController
+
+  def index(conn, _params) do
+    credits = API.list_credits()
+    render(conn, "index.json", credits: credits)
+  end
+
+  def create(conn, %{"credits" => credits_params}) do
+    with {:ok, %Credits{} = credits} <- API.create_credits(credits_params) do
+      conn
+      |> put_status(:created)
+      |> put_resp_header("location", Routes.credits_path(conn, :show, credits))
+      |> render("show.json", credits: credits)
+    end
+  end
+
+  def show(conn, %{"id" => id}) do
+    credits = API.get_credits!(id)
+    render(conn, "show.json", credits: credits)
+  end
+
+  def update(conn, %{"id" => id, "credits" => credits_params}) do
+    credits = API.get_credits!(id)
+
+    with {:ok, %Credits{} = credits} <- API.update_credits(credits, credits_params) do
+      render(conn, "show.json", credits: credits)
+    end
+  end
+
+  def delete(conn, %{"id" => id}) do
+    credits = API.get_credits!(id)
+
+    with {:ok, %Credits{}} <- API.delete_credits(credits) do
+      send_resp(conn, :no_content, "")
+    end
+  end
+end

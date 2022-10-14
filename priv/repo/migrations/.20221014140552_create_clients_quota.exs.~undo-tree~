@@ -1,0 +1,32 @@
+(undo-tree-save-format-version . 1)
+"422135492ad9c77cd059cd52bcd79ac8f6aef99c"
+[nil nil nil nil (25417 28091 661433 538000) 0 nil]
+([nil nil ((#("  def change do
+    create table(:clients_quota) do
+      add :loan_code, :string
+      add :plan_number, :integer
+      add :quota_sec, :integer
+      add :conpcept_code, :string
+      add :user_code, :string
+      add :calc_number_days, :integer
+      add :quota_amount, :decimal
+      add :earned_amount, :decimal
+      add :paid_amount, :decimal
+      add :condoned_amount, :decimal
+      add :payment_sec, :integer
+      add :payment_date, :utc_datetime
+      add :concept_state, :string
+      add :previous_paid_amount, :decimal
+      add :previous_concept_state, :string
+      add :previous_payment_date, :utc_datetime
+      add :previous_sec_payment, :integer
+      add :last_payment_penalty, :binary
+      add :previous_earned_amount, :decimal
+      add :debt_balance, :decimal
+      add :office_code, :string
+
+      timestamps()
+    end
+  end" 0 2 (fontified t) 2 5 (fontified t face font-lock-keyword-face) 5 6 (fontified t) 6 12 (fontified t face font-lock-function-name-face) 12 13 (fontified t) 13 15 (fontified t face font-lock-keyword-face) 15 33 (fontified t) 33 47 (fontified t face elixir-atom-face) 47 49 (fontified t) 49 51 (fontified t face font-lock-keyword-face) 51 62 (fontified t) 62 72 (fontified t face elixir-atom-face) 72 74 (fontified t) 74 81 (fontified t face elixir-atom-face) 81 92 (fontified t) 92 104 (fontified t face elixir-atom-face) 104 106 (fontified t) 106 114 (fontified t face elixir-atom-face) 114 125 (fontified t) 125 135 (fontified t face elixir-atom-face) 135 137 (fontified t) 137 145 (fontified t face elixir-atom-face) 145 156 (fontified t) 156 170 (fontified t face elixir-atom-face) 170 172 (fontified t) 172 179 (fontified t face elixir-atom-face) 179 190 (fontified t) 190 200 (fontified t face elixir-atom-face) 200 202 (fontified t) 202 209 (fontified t face elixir-atom-face) 209 220 (fontified t) 220 237 (fontified t face elixir-atom-face) 237 239 (fontified t) 239 247 (fontified t face elixir-atom-face) 247 258 (fontified t) 258 271 (fontified t face elixir-atom-face) 271 273 (fontified t) 273 281 (fontified t face elixir-atom-face) 281 292 (fontified t) 292 306 (fontified t face elixir-atom-face) 306 308 (fontified t) 308 316 (fontified t face elixir-atom-face) 316 327 (fontified t) 327 339 (fontified t face elixir-atom-face) 339 341 (fontified t) 341 349 (fontified t face elixir-atom-face) 349 360 (fontified t) 360 376 (fontified t face elixir-atom-face) 376 378 (fontified t) 378 386 (fontified t face elixir-atom-face) 386 397 (fontified t) 397 409 (fontified t face elixir-atom-face) 409 411 (fontified t) 411 415 (fontified t face elixir-atom-face) 415 419 (fontified t face elixir-atom-face) 419 420 (fontified t) 420 430 (fontified t) 430 443 (fontified t face elixir-atom-face) 443 445 (fontified t) 445 458 (fontified t face elixir-atom-face) 458 469 (fontified t) 469 483 (fontified t face elixir-atom-face) 483 485 (fontified t) 485 492 (fontified t face elixir-atom-face) 492 503 (fontified t) 503 524 (fontified t face elixir-atom-face) 524 526 (fontified t) 526 534 (fontified t face elixir-atom-face) 534 545 (fontified t) 545 568 (fontified t face elixir-atom-face) 568 570 (fontified t) 570 577 (fontified t face elixir-atom-face) 577 588 (fontified t) 588 610 (fontified t face elixir-atom-face) 610 612 (fontified t) 612 625 (fontified t face elixir-atom-face) 625 636 (fontified t) 636 657 (fontified t face elixir-atom-face) 657 659 (fontified t) 659 667 (fontified t face elixir-atom-face) 667 678 (fontified t) 678 699 (fontified t face elixir-atom-face) 699 701 (fontified t) 701 708 (fontified t face elixir-atom-face) 708 719 (fontified t) 719 742 (fontified t face elixir-atom-face) 742 744 (fontified t) 744 752 (fontified t face elixir-atom-face) 752 763 (fontified t) 763 776 (fontified t face elixir-atom-face) 776 778 (fontified t) 778 786 (fontified t face elixir-atom-face) 786 797 (fontified t) 797 809 (fontified t face elixir-atom-face) 809 811 (fontified t) 811 818 (fontified t face elixir-atom-face) 818 843 (fontified t) 843 846 (fontified t face font-lock-keyword-face) 846 849 (fontified t) 849 852 (fontified t face font-lock-keyword-face)) . -86) (undo-tree-id0 . -16) (undo-tree-id1 . -16) (undo-tree-id2 . -52) (undo-tree-id3 . -52) (undo-tree-id4 . -82) (undo-tree-id5 . -82) (undo-tree-id6 . -115) (undo-tree-id7 . -115) (undo-tree-id8 . -146) (undo-tree-id9 . -146) (undo-tree-id10 . -180) (undo-tree-id11 . -180) (undo-tree-id12 . -210) (undo-tree-id13 . -210) (undo-tree-id14 . -248) (undo-tree-id15 . -248) (undo-tree-id16 . -282) (undo-tree-id17 . -282) (undo-tree-id18 . -317) (undo-tree-id19 . -317) (undo-tree-id20 . -350) (undo-tree-id21 . -350) (undo-tree-id22 . -387) (undo-tree-id23 . -387) (undo-tree-id24 . -420) (undo-tree-id25 . -420) (undo-tree-id26 . -459) (undo-tree-id27 . -459) (undo-tree-id28 . -493) (undo-tree-id29 . -493) (undo-tree-id30 . -535) (undo-tree-id31 . -535) (undo-tree-id32 . -578) (undo-tree-id33 . -578) (undo-tree-id34 . -626) (undo-tree-id35 . -626) (undo-tree-id36 . -668) (undo-tree-id37 . -668) (undo-tree-id38 . -709) (undo-tree-id39 . -709) (undo-tree-id40 . -753) (undo-tree-id41 . -753) (undo-tree-id42 . -787) (undo-tree-id43 . -787) (undo-tree-id44 . -819) (undo-tree-id45 . -819) (undo-tree-id46 . -820) (undo-tree-id47 . -820) (undo-tree-id48 . -839) (undo-tree-id49 . -839) (undo-tree-id50 . -847) (undo-tree-id51 . -847) (undo-tree-id52 . -852) (undo-tree-id53 . -847) (undo-tree-id54 . -852) (undo-tree-id55 . 3) (undo-tree-id56 . -852) (undo-tree-id57 . -847) 938 (t 25417 27840 462034 845000)) nil (25417 28091 661422 568000) 0 nil])
+([nil current ((nil rear-nonsticky nil 1512 . 1513) (nil fontified nil 86 . 1513) (86 . 1513)) nil (25417 28091 661308 984000) 0 nil])
+nil

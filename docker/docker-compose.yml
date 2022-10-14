@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  db.postgres:
+    container_name: db.goliath_credits_api_dev
+    image: 'docker.uclv.cu/postgres:alpine3.15'
+    environment:
+      - POSTGRES_USER=goliath_master
+      - POSTGRES_PASSWORD=Zion2190**
+      - POSTGRES_DB=goliath_credits
+
+    ports:
+      - 15432:5432
+
+    volumes:
+      - ./pgdata_goliath_credits_api_dev:/var/lib/postgresql/data

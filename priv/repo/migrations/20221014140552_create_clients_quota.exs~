@@ -1,0 +1,31 @@
+defmodule GoliathCredits.Repo.Migrations.CreateClientsQuota do
+  use Ecto.Migration
+
+  def change do
+    create table(:clients_quota) do
+      add :loan_code, :string
+      add :plan_number, :integer
+      add :quota_sec, :integer
+      add :conpcept_code, :string
+      add :user_code, :string
+      add :calc_number_days, :integer
+      add :quota_amount, :decimal
+      add :earned_amount, :decimal
+      add :paid_amount, :decimal
+      add :condoned_amount, :decimal
+      add :payment_sec, :integer
+      add :payment_date, :utc_datetime
+      add :concept_state, :string
+      add :previous_paid_amount, :decimal
+      add :previous_concept_state, :string
+      add :previous_payment_date, :utc_datetime
+      add :previous_sec_payment, :integer
+      add :last_payment_penalty, :binary
+      add :previous_earned_amount, :decimal
+      add :debt_balance, :decimal
+      add :office_code, :string
+
+      timestamps()
+    end
+  end
+end

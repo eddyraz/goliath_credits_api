@@ -1,0 +1,58 @@
+defmodule GoliathCreditsWeb.CreditsView do
+  use GoliathCreditsWeb, :view
+  alias GoliathCreditsWeb.CreditsView
+
+  def render("index.json", %{credits: credits}) do
+    %{data: render_many(credits, CreditsView, "credits.json")}
+  end
+
+  def render("show.json", %{credits: credits}) do
+    %{data: render_one(credits, CreditsView, "credits.json")}
+  end
+
+  def render("credits.json", %{credits: credits}) do
+    %{
+      id: credits.id,
+      loan_code: credits.loan_code,
+      plan_number: credits.plan_number,
+      quota_sec: credits.quota_sec,
+      start_date: credits.start_date,
+      payment_date: credits.payment_date,
+      due_date: credits.due_date,
+      quota_delayed_days: credits.quota_delayed_days,
+      quota_state: credits.quota_state,
+      balance_sub_code: credits.balance_sub_code,
+      delayed_quota_history_days: credits.delayed_quota_history_days,
+      previous_quota_state: credits.previous_quota_state,
+      previous_payment_date: credits.previous_payment_date,
+      previous_state_sub_code: credits.previous_state_sub_code,
+      prevision_amount: credits.prevision_amount,
+      INTE_adjust: credits.INTE_adjust,
+      bill_number: credits.bill_number,
+      Cabbot.Creditos: credits.Cabbot.Creditos,
+      ClientsQuota: credits.ClientsQuota,
+      clients_quota: credits.clients_quota,
+      loan_code: credits.loan_code,
+      plan_number: credits.plan_number,
+      quota_sec: credits.quota_sec,
+      conpcept_code: credits.conpcept_code,
+      user_code: credits.user_code,
+      calc_number_days: credits.calc_number_days,
+      quota_amount: credits.quota_amount,
+      earned_amount: credits.earned_amount,
+      paid_amount: credits.paid_amount,
+      condoned_amount: credits.condoned_amount,
+      payment_sec: credits.payment_sec,
+      payment_date: credits.payment_date,
+      concept_state: credits.concept_state,
+      previous_paid_amount: credits.previous_paid_amount,
+      previous_concept_state: credits.previous_concept_state,
+      previous_payment_date: credits.previous_payment_date,
+      previous_sec_payment: credits.previous_sec_payment,
+      last_payment_penalty: credits.last_payment_penalty,
+      previous_earned_amount: credits.previous_earned_amount,
+      debt_balance: credits.debt_balance,
+      office_code: credits.office_code
+    }
+  end
+end
